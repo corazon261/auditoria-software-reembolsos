@@ -1,0 +1,81 @@
+[
+  {
+    "cenario": "S1",
+    "usuario": {
+      "id": "U-S1",
+      "perfil": "leitor",
+      "autenticado": true
+    },
+    "valor_centavos": 10000,
+    "status_inicial": "pendente",
+    "chamadas": 1,
+    "respostas": [
+      "aprovado"
+    ],
+    "status_final": "aprovado",
+    "eventos": [
+      {
+        "pedido": "P-S1",
+        "acao": "aprovacao"
+      }
+    ]
+  },
+  {
+    "cenario": "S2",
+    "usuario": {
+      "id": "U-S2",
+      "perfil": "aprovador",
+      "autenticado": true
+    },
+    "valor_centavos": 50000,
+    "status_inicial": "pendente",
+    "chamadas": 1,
+    "respostas": [
+      "negado"
+    ],
+    "status_final": "pendente",
+    "eventos": []
+  },
+  {
+    "cenario": "S3",
+    "usuario": {
+      "id": "U-S3",
+      "perfil": "aprovador",
+      "autenticado": true
+    },
+    "valor_centavos": 10000,
+    "status_inicial": "pendente",
+    "chamadas": 2,
+    "respostas": [
+      "aprovado",
+      "aprovado"
+    ],
+    "status_final": "aprovado",
+    "eventos": [
+      {
+        "pedido": "P-S3",
+        "acao": "aprovacao"
+      },
+      {
+        "pedido": "P-S3",
+        "acao": "aprovacao"
+      }
+    ]
+  },
+  {
+    "cenario": "S4",
+    "usuario": {
+      "id": "U-S4",
+      "perfil": "aprovador",
+      "autenticado": false
+    },
+    "valor_centavos": 10000,
+    "status_inicial": "pendente",
+    "chamadas": 1,
+    "respostas": [
+      "negado"
+    ],
+    "status_final": "pendente",
+    "eventos": []
+  }
+]
